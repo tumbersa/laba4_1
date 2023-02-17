@@ -1,7 +1,7 @@
 #include "sortMerge.h"
 void sortMerge::merge(int* A, int* B, int p, int q, int n) {
 	int in_pos1 = p, in_pos2 = q + 1, out_pos = 0;
-	while (in_pos1 < q && in_pos2 <= n) {
+	while (in_pos1 <= q && in_pos2 <= n) {
 		if (A[in_pos1] < A[in_pos2])
 			B[out_pos++] = A[in_pos1++];
 		else
